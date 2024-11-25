@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best-Switch</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Beat-Switch</h1>
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="post.html">Post</a>
+            <a href="contact.html">Contact</a>
+            <a href="dms.html">Messages</a>
+            <a href="login.html">Log In</a>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
+
+    <h1 class="title">SEND A MESSAGE</h1>
+    <!-- Section: Login -->
+    <div class="post">
+        <form action="dms.html" method="post">
+            <label for="reciever">Send To:</label><br>
+            <input type="text" id="reciever" name="reciever" required><br>
+            <label for="topic">Topic:</label><br>
+            <input type="text" id="topic" name="topic" required><br>
+            <label for="desc">Message:</label><br>
+            <textarea id="desc" name="desc"></textarea><br>
+            <label for="audio">Upload Audio File:</label><br>
+            <input type="file" id="audio" name="audio" accept="audio/*" required><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Mankirt Hothi 219384239.</p>
+        <address>
+            Written By: Mankirt Hothi<br>
+            Made for ITEC 3020 A Fall 2024<br>
+            York University<br>
+            Professor Shadikur Rahman<br>
+        </address>
+    </div>
+</body>
+</html>
