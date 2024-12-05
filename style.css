@@ -1,153 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+  body {
+    background-color: #05090a;
+    color: #e8f1f3;
+    padding: 10px;
+    font-family:'Roboto Condensed';
+  }
 
-    background-color: #0b100d;
-    color: #e3f5ef;
-    padding: 50px;
-    font-family: 'Fira-Mono', monospace;
- }
-
-.header {
-    background-color: #80f1ba;
+  .header {
+    background-color: #99cbd6;
     padding: 20px;
     text-align: center;
-    border: 2px solid #0b100d;
+    border: 2px solid #05090a;
     border-radius: 10px;
-  }
-
-  .col-8{
-    border: 3px solid #46d5a0;
-  }
-
-  .header p {
-    color: #0b100d;
   }
   
   .footer {
-    background-color: #2c8564;
+    background-color: #295765;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-  }
-
-  .blogs{
-    text-align: center;
-    width: 25%;
-    padding: 10px;
-    margin-inline: 3.4%;
-    display: inline-block;
-  }
-
-  .hobby{
-    text-align: center;
-    display:inline-block;
-    width:46%;
-  }
-  .hobby ul{
-    margin-inline: 30%;
-    text-align: left;
   }
 
   h2 {
     font-size: 24px;
     text-align: center;
   }
+
   h5{
     text-align: center;
     padding: 0px;
     margin: 0px;
   }
 
-  .about_me{
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: center;
-  }
-
-  .hobby {
-    padding: 20px;
-    margin: 10px;
-  }
   .login, .register, .contact{
     text-align: center;
   }
 
-  input{
-    margin: 5px 0px;
+  .form span{
+    display: inline-block;
+    text-align: center;
   }
 
-  input[type=submit]{
-    margin: 10px 0px;
+  input, textarea, select{
+    margin: 5px;
+    padding:5px;
+    display: inline-block;
+    border: 3px solid #4db6ce;
+    border-radius: 5px;
   }
 
-  .classes table, tr, td{
+  table, tr, td{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     text-align: center;
-    border: 1px solid #46d5a0;
+    border: 1px solid #4db6ce;
     border-collapse: collapse;
     padding: 4px;
   }
 
-  #gallery{
-    text-align: center;
-  }
-  #gallery p{
-    text-align: left;
-  }
-  img, video {
-    border: 2px solid #46d5a0;
+  img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #4db6ce;
     padding: 2px;
-    
+    margin-inline: 5%;
     border-radius: 4px;
-    width: 90%;
-    height:100%;
-    margin-left: 5%;
+  }
+  
+  .row{
+    margin: 10px 0px;
+    padding: 2px 0px;
+  }
+
+  .audio{
+    margin: 2px 0px;
+    padding: 2px 0px;
+  }
+
+  .col-4{
+    text-align: center;
   }
 
   .topnav {
     overflow: auto;
-    background-color: #0b100d;
+    background-color: #295765;
     border-radius: 5px;
   }
   
   .topnav a {
     display:inline-block;
-    color: #e3f5ef;
+    color: #e8f1f3;
     text-align: center;
     padding: 14px 3.4%;
     text-decoration: none;
     font-size: 17px;
   }
 
-  input, textarea{
-    padding:5px;
-    width: 10%;
-    display: inline-block;
-    border: 3px solid #46d5a0;
-    border-radius: 5px;
-  }
-
   .topnav a:visited {
-    color: #e3f5ef;
+    color: #e8f1f3;
   }
   .topnav a:hover {
-    background-color: #2c8564;
+    background-color: #295765;
   }
   .topnav a:active {
-    background-color: #e3f5ef;
-    color: #0b100d;
+    background-color: #e8f1f3;
+    color: #05090a;
   }
   
   a:link{
-    color: #46d5a0;
+    color: #4db6ce;
   }
   a:visited{
-    color: #2c8564;
+    color: #295765;
   }
   a:hover{
-    color: #e3f5ef;
+    color: #e8f1f3;
   }
   a:active{
-    color: #0b100d;
+    color: #05090a;
   }

@@ -8,16 +8,17 @@ async function login(){
     try {
         const response = await fetch(`${BASE_URL}/users`);
         const users = await response.json();
+        let userFound = false;
 
         users.forEach(user => {
             if(user.password == pass && user.username == usernam){
                 localStorage.setItem("Current User", user.username);
+                userFound = true;
                 window.location.href = "home.html";
-                return;
             }
         });
-
-        alert("User Not Found. Register or try again.");
+        if(!userFound)
+            alert("User Not Found. Register or try again.");
     } catch (error) {
         console.error('Error fetching data:', error);
     }
@@ -310,4 +311,6 @@ function listMessage(message){
     // add the newly created element and its content into the DOM
     const currentDiv = document.getElementById("feed");
     document.body.insertBefore(newDiv, currentDiv);
+
+    //npx kill-port 3000
 }
