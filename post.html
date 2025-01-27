@@ -26,16 +26,16 @@
     <div class="post">
         <form action="home.html" method="post">
             <label for="song title">Song Title:</label><br>
-            <input type="text" id="song title" name="song title" required><br>
+            <input type="text" id="song title" name="song title" maxlength="30" required><br>
             <label for="artist">Artist:</label><br>
-            <input type="text" id="artist" name="artist" required><br>
+            <input type="text" id="artist" name="artist" maxlength="30" required><br>
             <label for="desc">Description:</label><br>
-            <textarea id="desc" name="desc"></textarea><br>
+            <textarea id="desc" name="desc" maxlength="600"></textarea><br>
             <label for="img">Upload Album Cover:</label><br>
-            <input type="file" id="img" name="img" accept="image/*" required><br>
+            <input type="file" id="img" name="img" accept=".png, .jpg, .jpeg" required><br>
             <label for="audio">Upload Audio File:</label><br>
             <input type="file" id="audio" name="audio" accept="audio/*" required><br>
-            <label for="link">(optional) Link to Song:</label><br>
+            <label for="link">(Optional) Link to Song:</label><br>
             <input type="text" id="link" name="link"><br>
             <input type="button" value="Post" onclick="newPost()">
         </form>

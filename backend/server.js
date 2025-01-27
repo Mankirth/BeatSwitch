@@ -25,10 +25,6 @@ db.connect((err) => {
     console.log('Connected to MySQL Database');
 });
 
-app.get("/", (req, res) => {
-    res.json("hello");
-  });
-
 // Insert data
 app.post('/add', (req, res) => {
     const { titl, bod, user, imag, aud, arti, link } = req.body;
@@ -82,27 +78,6 @@ app.get('/users', (req, res) => {
     db.query(query, (err, results) => {
         if (err) return res.status(500).send(err);
         res.json(results);
-    });
-});
-
-// Update data
-app.put('/update/:id', (req, res) => {
-    const { id } = req.params;
-    const { name, job, experience, salary } = req.body;
-    const query = 'UPDATE employees SET name = ?, job = ?, experience = ?, salary = ? WHERE id = ?';
-    db.query(query, [name, job, experience, salary, id], (err) => {
-        if (err) return res.status(500).send(err);
-        res.send('Employee updated successfully');
-    });
-});
-
-// Delete data
-app.delete('/delete/:id', (req, res) => {
-    const { id } = req.params;
-    const query = 'DELETE FROM employees WHERE id = ?';
-    db.query(query, [id], (err) => {
-        if (err) return res.status(500).send(err);
-        res.send('Employee deleted successfully');
     });
 });
 

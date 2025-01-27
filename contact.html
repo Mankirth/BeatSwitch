@@ -25,12 +25,12 @@
     <div class="post">
         <form action="dms.html" method="post">
             <label for="reciever">Send To:</label><br>
-            <input type="text" id="reciever" name="reciever" required><br>
+            <input type="text" id="reciever" name="reciever" maxlength="50" required><br>
             <label for="topic">Topic:</label><br>
-            <input type="text" id="topic" name="topic" required><br>
+            <input type="text" id="topic" name="topic" maxlength="75" required><br>
             <label for="desc">Message:</label><br>
-            <textarea id="desc" name="desc"></textarea><br>
-            <label for="audio">Upload Audio File:</label><br>
+            <textarea id="desc" name="desc" maxlength="2000"></textarea><br>
+            <label for="audio">(Optional) Upload Audio File:</label><br>
             <input type="file" id="audio" name="audio" accept="audio/*" required><br>
             <input type="button" value="Send Message" onclick="newMsg()">
         </form>
